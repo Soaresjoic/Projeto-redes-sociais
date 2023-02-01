@@ -1,0 +1,31 @@
+@charset "UTF-8"
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; /*vamos preencher 100% da altura*/
+    width: 100vw; /*vamos preencher 100% da largura*/
+    background-color: black;
+}
+
+body {
+    background: url('../imagens/fundo-galaxia.jpg') no-repeat top center;
+    background-size: cover; /*a imagem vai ser exibida sem cortes*/
+    background-attachment: fixed; /*fixamos a imagem pra n ter rolagem*/
+}
+main {
+    position: relative;
+    height: 100vh;
+}
+
+section#telefone { /*posicionando a imagem no meio da tela*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
